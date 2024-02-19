@@ -2,13 +2,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 2.0"
+      version = "~> 4.0"
     }
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-west-1"
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-unique-bucket-name"
