@@ -8,7 +8,6 @@ terraform {
 }
 provider "aws" {
   region  = "us-west-1"
-  profile = "default"
 }
 
 resource "aws_s3_bucket" "test_bucket" {
