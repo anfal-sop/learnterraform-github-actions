@@ -6,9 +6,13 @@ terraform {
     }
   }
 }
+provider "aws" {
+  region  = "us-west-2"
+  profile = "my-profile"
+}
 
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "my-unique-bucket-name"
+  bucket = "Demo-bucket"
 
   # Other bucket configurations
 
