@@ -72,5 +72,4 @@ resource "aws_security_group" "main" {
 resource "aws_key_pair" "deployer" {
   key_name   = "aws_key"
   public_key = "<PLACE-YOUR-PUBLIC-KEY>"
-
-
+}
