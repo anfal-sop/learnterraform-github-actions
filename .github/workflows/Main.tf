@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "remote" {
-  organization = "CloudQuickLabs"
+  organization = "cloudquickpoc"
 
     workspaces {
-      name = "AWSBackup"
+      name = "AWS-CloudQuickPocs"
     }
   }
 }
